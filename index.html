@@ -1,55 +1,1067 @@
-<!DOCTYPE html>
-<html>
-    
-    <style type="text/css">
-        body {
-            background:url("https://picsum.photos/1400/2000/?random");
-    color:white;
-        }
-    </style>
+Koding, [27.04.19 18:50]
+<!-- Created by ANONYMOUS--> 
+ 
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>
+         border | CSS-Tricks  
+      </title>
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <meta name="msapplication-TileColor" content="#00aba9">
+      <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+      <meta property="fb:pages" content="124436167285">
+      <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="CSS-Tricks Search">
+      <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/CssTricks">
+      <link rel="preload" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Bold-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+      <link rel="preload" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Regular-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
+      <style>
+         @font-face {
+         font-family: Rubik;
+         src: 
+         url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Bold-kern-latin.woff2) format("woff2"),
+         url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Bold-kern-latin.woff) format("woff");
+         font-weight: 700;
+         font-display: swap;
+         }
+         @font-face {
+         font-family: Rubik;
+         src: 
+         url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Regular-kern-latin.woff2) format("woff2"), 
+         url(https://css-tricks.com/wp-content/themes/CSS-Tricks-17/fonts/Rubik-Regular-kern-latin.woff) format("woff");
+         font-weight: 400;
+         font-display: swap;
+         }
+      </style>
+      <link rel="stylesheet" href="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/style.css?v=10.4">
+      <!-- This site is optimized with the Yoast SEO plugin v11.0 - https://yoast.com/wordpress/plugins/seo/ -->
+      <meta name="description" content="The border property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to. .box { border: 3px"/>
+      <link rel="canonical" href="https://css-tricks.com/almanac/properties/b/border/" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="border | CSS-Tricks" />
+      <meta property="og:description" content="The border property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to. .box { border: 3px" />
+      <meta property="og:url" content="https://css-tricks.com/almanac/properties/b/border/" />
+      <meta property="og:site_name" content="CSS-Tricks" />
+      <meta property="article:publisher" content="https://www.facebook.com/CSSTricks" />
+      <meta property="og:image" content="https://css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+      <meta property="og:image:secure_url" content="https://css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+      <meta property="og:image:width" content="512" />
+      <meta property="og:image:height" content="512" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:description" content="The border property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to. .box { border: 3px" />
+      <meta name="twitter:title" content="border | CSS-Tricks" />
+      <meta name="twitter:site" content="@Real_CSS_Tricks" />
+      <meta name="twitter:image" content="https://css-tricks.com/wp-content/uploads/2014/03/css-tricks-star.png" />
+      <meta name="twitter:creator" content="@sarassassin" />
+      <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://css-tricks.com/#website","url":"https://css-tricks.com/","name"
 
-    <head>
-       <title>My Blog</title>
-       <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <div id="header">
-            <div class="container">
-                <a id="header-title"
-                 href="index.html">MY BLOG</a>
-                <ul id="header-nav">
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="mailto:elnickopangestu@gmail.com">CONTACT</li>
-                </ul>
-        </div>
-        <div id="content">
-            <div class="container">
-                <div class="post">
-                    <div class="post-author">
-                        <img src="https://github.com/elnickopangestu/elnickopangestu.github.io/blob/master/photo_2019-01-19_04-40-32.jpg">
-                        <span>Me</span>
-                    </div>
-                    <p class="post-date">Today</p>
-                    <h3 class="post-tittle">Becoming a web developer</h3>
-                </div>
+Koding, [27.04.19 18:50]
+:"CSS-Tricks","publisher":{"@id":"https://css-tricks.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://css-tricks.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://css-tricks.com/almanac/properties/b/border/#webpage","url":"https://css-tricks.com/almanac/properties/b/border/","inLanguage":"en-US","name":"border | CSS-Tricks","isPartOf":{"@id":"https://css-tricks.com/#website"},"datePublished":"2011-09-01T03:02:53+00:00","dateModified":"2018-04-11T17:07:59+00:00","description":"The border property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to. .box { border: 3px","breadcrumb":{"@id":"https://css-tricks.com/almanac/properties/b/border/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://css-tricks.com/almanac/properties/b/border/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://css-tricks.com/","url":"https://css-tricks.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://css-tricks.com/almanac/","url":"https://css-tricks.com/almanac/","name":"CSS Almanac"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://css-tricks.com/almanac/properties/","url":"https://css-tricks.com/almanac/properties/","name":"Properties"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://css-tricks.com/almanac/properties/b/","url":"https://css-tricks.com/almanac/properties/b/","name":"B"}},{"@type":"ListItem","position":5,"item":{"@type":"WebPage","@id":"https://css-tricks.com/almanac/properties/b/border/","url":"https://css-tricks.com/almanac/properties/b/border/","name":"border"}}]}]}</script>
+      <!-- / Yoast SEO plugin. -->
+      <link rel="alternate" type="application/rss+xml" title="CSS-Tricks &raquo; border Comments Feed" href="https://css-tricks.com/almanac/properties/b/border/feed/" target="_blank" />
+      <link rel='stylesheet' id='wp-block-library-css'  href='https://css-tricks.com/wp-includes/css/dist/block-library/style.min.css?ver=5.1.1' type='text/css' media='all' />
+      <link rel='stylesheet' id='bbp-default-css'  href='https://css-tricks.com/wp-content/plugins/bbpress/templates/default/css/bbpress.css?ver=2.5.14-6684' target="_blank" type='text/css' media='screen' />
+      <link rel='stylesheet' id='jetpack-search-widget-css'  href='https://css-tricks.com/wp-content/plugins/jetpack/modules/widgets/search/css/search-widget-frontend.css?ver=5.1.1' target="_blank" type='text/css' media='all' />
+      <link rel='stylesheet' id='social-logos-css'  href='https://css-tricks.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' target="_blank" type='text/css' media='all' />
+      <script  src='https://css-tricks.com/wp-content/themes/CSS-Tricks-17/js/libs/jquery-3.3.1.min.js'></script>
+      <link rel='https://api.w.org/' href='https://css-tricks.com/wp-json/' />
+      <link rel='shortlink' href='https://wp.me/P354tK-3Di'target="_blank" />
+      <link rel="alternate" type="application/json+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Falmanac%2Fproperties%2Fb%2Fborder%2F"target="_blank" />
+      <link rel="alternate" type="text/xml+oembed" href="https://css-tricks.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcss-tricks.com%2Falmanac%2Fproperties%2Fb%2Fborder%2F&#038;format=xml" />
+      <!-- Better Art Direction Styles -->
+      <style>
+         .example-box {
+         width: 200px;
+         height: 100px;
+         border: 3px solid red;
+         background: #eee;
+         margin:  0 0 20px 0;
+         }
+      </style>
+      <link rel='dns-prefetch' href='//v0.wordpress.com'/>
+      <style type='text/css'>img#wpstats{display:none}</style>
+   </head>
+   <body class="page-template page-template-page-almanac-single page-template-page-almanac-single-php page page-id-13968 page-child parent-pageid-13913" id="top">
+      <a id="skip-nav" class="skip-nav screen
+
+Koding, [27.04.19 18:50]
+-reader-text" href="#maincontent">Skip to main content</a> 
+      <div id="top-of-site-pixel-anchor"></div>
+      <header class="site-header" id="site-header">
+         <div class="logo">
+            <a href="/">
+               <div class="screen-reader-text">CSS-Tricks</div>
+               <svg class="icon-logo-star" width="35px" height="35px">
+                  <use xlink:href="#icon-logo-star"></use>
+               </svg>
+               <!-- 288 35 -->
+               <svg class="icon-logo-text" width="214px" height="35px">
+                  <use xlink:href="#logo" target="_blank"></use>
+               </svg>
+            </a>
+         </div>
+         <div class="header-middle-area">
+            <nav class="main-nav" id="main-nav">
+               <ul class="main-sections">
+                  <li class="articles">
+                     <a href="https://css-tricks.com/archives/">
+                        <svg class="icon-nav-articles" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-articles"></use>
+                        </svg>
+                        <span>Articles</span>
+                     </a>
+                  </li>
+                  <li class="videos">
+                     <a href="https://css-tricks.com/video-screencasts/">
+                        <svg class="icon-nav-video" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-videos"></use>
+                        </svg>
+                        <span>Videos</span>
+                     </a>
+                  </li>
+                  <li class="almanac">
+                     <a href="https://css-tricks.com/almanac/">
+                        <svg class="icon-nav-almanac" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-almanac"></use>
+                        </svg>
+                        <span>Almanac</span>
+                     </a>
+                  </li>
+                  <li class="snippets">
+                     <a href="https://css-tricks.com/snippets/">
+                        <svg class="icon-nav-snippets" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-snippets"></use>
+                        </svg>
+                        <span>Snippets</span>
+                     </a>
+                  </li>
+                  <li class="newsletter">
+                     <a href="https://css-tricks.com/newsletters/">
+                        <svg class="icon-nav-newsletter" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-newsletter"></use>
+                        </svg>
+                        <span>Newsletter</span>
+                     </a>
+                  </li>
+                  <li class="jobs">
+                     <a href="https://css-tricks.com/guides/">
+                        <svg class="icon-nav-jobs" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-jobs"></use>
+                        </svg>
+                        <span>Jobs</span>
+                     </a>
+                  </li>
+                  <li class="guides">
+                     <a href="https://css-tricks.com/guides/">
+                        <svg class="icon-nav-guides" width="26px" height="26px">
+                           <use xlink:href="#icon-nav-guides"></use>
+                        </svg>
+                        <span>Guides</span>
+                     </a>
+                  </li>
+               </ul>
+               <hr class="squiggle">
+               <div class="mobile-other-nav">
+                  <a href="#top">Back to Top</a>
+                  <a href="/contact/">Contact</a>
+                  <a href="/about/">About</a>
+                  <a href="/archives/">Archives</a>
+                  <a href="/advertising/">Advertise</a>
+                  <a href="/jobs/">Jobs</a>
+                  <a href="/license/">License</a>
+                  <a href="/subscription-options/">Subscribe</a>
+                  <a href="/forums/">Forums</a>
+                  <a href="/guest-posting/">Guest Posting</a>
+
+Koding, [27.04.19 18:50]
+</div>
+               <div class="mobile-social">
+                  <a href="https://www.facebook.com/CSSTricks/" class="social-link-facebook">
+                     <span class="screen-reader-text">Facebook</span>
+                     <svg class="logo-facebook" width="20px" height="20px">
+                        <use xlink:href="#logo-facebook"></use>
+                     </svg>
+                  </a>
+                  <a href="https://twitter.com/css" class="social-link-twitter">
+                     <span class="screen-reader-text">Twitter</span>
+                     <svg class="logo-twitter" width="20px" height="20px">
+                        <use xlink:href="#logo-twitter"></use>
+                     </svg>
+                  </a>
+                  <a href="https://www.youtube.com/user/realcsstricks" class="social-link-youtube">
+                     <span class="screen-reader-text">YouTube</span>
+                     <svg class="logo-youtube" width="20px" height="20px">
+                        <use xlink:href="#logo-youtube"></use>
+                     </svg>
+                  </a>
+                  <a href="https://spectrum.chat/css-tricks" class="social-link-spectrum">
+                     <span class="screen-reader-text">Spectrum</span>
+                     <svg class="logo-spectrum" width="20px" height="20px">
+                        <use xlink:href="#logo-spectrum"></use>
+                     </svg>
+                  </a>
+                  <a href="https://css-tricks.com/feed/" class="social-link-rss">
+                     <span class="screen-reader-text">RSS</span>
+                     <svg class="logo-rss" width="20px" height="20px">
+                        <use xlink:href="#logo-rss"></use>
+                     </svg>
+                  </a>
+               </div>
+            </nav>
+         </div>
+         <div class="search" role="search" id="search-area">
+            <div class="chw-widget">
+               <form role="search" method="get" id="searchform" class="search-form" action="https://css-tricks.com/">
+                  <label class="screen-reader-text" id="search-label" for="search-input">Search for:</label>
+                  <input type="search" required name="s" id="search-input" class="search-field" placeholder="e.g. flexbox" value="">
+                  <input type="hidden" name="orderby" value="relevance">
+                  <input type="hidden" name="post_type" value="post,page,guide">
+                  <button type="submit" class="button-search">
+                     <span class="screen-reader-text">Search</span>
+                     <svg class="icon-search" width="26px" height="26px">
+                        <use xlink:href="#icon-search"></use>
+                     </svg>
+                  </button>
+               </form>
             </div>
-        <div id="footer"><div class="container"></div>
-        </div> 
-    </body>
+         </div>
+         <div class="mobile-actions" id="mobile-actions">
+            <button class="search-opener" id="search-opener">
+               <span class="screen-reader-text">Open Search</span>
+               <svg class="icon-search" width="26px" height="26px">
+                  <use xlink:href="#icon-search"></use>
+               </svg>
+               <svg class="icon-search-close" width="26px" height="26px">
+                  <use xlink:href="#icon-close"></use>
+               </svg>
+            </button>
+            <button id="mobile-nav-button" class="mobile-nav-button">
+               <span class="screen-reader-text">Open Navigation</span>
+               <svg class="icon-burger" width="28px" height="28px">
+                  <use xlink:href="#icon-burger"></use>
+               </svg>
+               <svg class="icon-close" width="28px" height="28px">
+                  <use xlink:href="#icon-close"></use>
+               </svg>
+            </button>
+         </div>
+      </header>
+      <div class="all-site-wrap" id="all-site-wrap">
+         <script>
+            var articleYear = 2011;
+            var articleAuthor = "1036";
+            var articleType = "almanac";
+         </script>
+         <main id="post-13968" class="instapaper_body h-
 
-    <div id="footer">
-        <div class="container">
-            <div class="column">
-                <h4>My Links</h4>
-                <p>
-                    <a href="https://www.instagram.com/elnickopangestu">Instagram</a>
-                    <br>
-                    <a href="https://web.facebook.com/elnickopangestu">Facebook</a>
-                </p>
+Koding, [27.04.19 18:50]
+entry e-content">
+            <header class="header-breadcrumbs header-with-bottom-gradient" id="maincontent">
+               <div class="header-breadcrumbs-inside">
+                  <span><span><span><a href="https://css-tricks.com/" target="_blank" >Home</a> <span class="breadcrumb-separator">/</span> <span><a href="https://css-tricks.com/almanac/" target="_blank" >CSS Almanac</a> <span class="breadcrumb-separator">/</span> <span><a href="https://css-tricks.com/almanac/properties/" target="_blank" >Properties</a> <span class="breadcrumb-separator">/</span> <span><a href="https://css-tricks.com/almanac/properties/b/" target="_blank">B</a> <span class="breadcrumb-separator">/</span> <span class="breadcrumb_last" aria-current="page">border</span></span></span></span></span></span></span>
+                  <h1 class="screen-reader">
+                     border
+                  </h1>
+                  <div class="article-content-meta">
+                     <div class="author-avatar">
+                        <a href="https://css-tricks.com/author/saracope/">
+                        <img alt='Photo of Sara Cope' src='https://secure.gravatar.com/avatar/84da92f298e5b124d92fb581b82cfdf4?s=80&#038;d=retro&#038;r=pg' srcset='https://secure.gravatar.com/avatar/84da92f298e5b124d92fb581b82cfdf4?s=160&#038;d=retro&#038;r=pg 2x' class='avatar avatar-80 photo' height='80' width='80' />    </a>
+                        <svg class="half-circle" width="80px" height="80px">
+                           <use xlink:href="#half-circle"></use>
+                        </svg>
+                     </div>
+                     <div class="author-name-area">
+                        <div class="author-name-prefix">
+                           Author
+                        </div>
+                        <a class="author-name" href="https://css-tricks.com/author/saracope/">
+                        Sara Cope    </a>
+                     </div>
+                     <div class="article-comments-meta">
+                        <div class="comments-prefix">
+                           7 Comments    
+                        </div>
+                        <a class="comments-link" href="https://css-tricks.com/almanac/properties/b/border/#comments">
+                           Join the Conversation
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right">
+                              <path d="M7 12.5L23 12.5" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M1 12.5H2" stroke="url(#paint1_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M17.5 7L23 12.5L17.5 18" stroke="url(#paint2_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              <defs>
+                                 <linearGradient id="paint0_linear" x1="10.7498" y1="12.5" x2="11.3447" y2="9.73465" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8A00"/>
+                                    <stop offset="1" stop-color="#DA1B60"/>
+                                 </linearGradient>
+                                 <linearGradient id="paint1_linear" x1="1.23436" y1="12.5" x2="2.00945" y2="12.2748" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8A00"/>
+                                    <stop offset="1" stop-color="#DA1B60"/>
+                                 </linearGradient>
+                                 <linearGradient id="paint2_linear" x1="18.789" y1="17.9995" x2="23.3162" y2="17.3419" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FF8A00"/>
+                                    <stop offset="1" stop-color="#DA1B60"/>
+                                 </linearGradient>
+                              </defs>
+                           </svg>
+                        </a>
+                     </div>
+
+Koding, [27.04.19 18:50]
+<div class="created">
+                        <div class="created-prefix">
+                           Published
+                        </div>
+                        <time datetime="">
+                        Aug 31, 2011      </time>
+                     </div>
+                     <div class="updated">
+                        <div class="updated-prefix">
+                           Updated
+                        </div>
+                        <time datetime="">
+                        Apr 11, 2018      </time>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <div class="header-gradient-after">
+               <div class="header-gradient-content">
+                  <div class="header-gradient-content-inside">
+                     <div class="sharedaddy sd-sharing-enabled">
+                        <div class="robots-nocontent sd-block sd-social sd-social-text sd-sharing">
+                           <h3 class="sd-title">Share this:</h3>
+                           <div class="sd-content">
+                              <ul>
+                                 <li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-13968" class="share-twitter sd-button no-icon" href="https://css-tricks.com/almanac/properties/b/border/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li>
+                                 <li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-13968" class="share-facebook sd-button no-icon" href="https://css-tricks.com/almanac/properties/b/border/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li>
+                                 <li class="share-end"></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="bold-underline-links header-gradient-sponsor">
+                        <p>
+                           <a href="https://synd.co/2CFkDvJ">HelloSign</a>: Everything IT requires and Developers love
+                        </p>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class="column"><h4>My Story</h4>
-            <P>Hi There I'm an Aspiring Web Developer.</P></div>
-        </div>
-    </div>
+            <div class="page-wrap on-light">
+               <div class="article-and-sidebar single-almanac-content">
+                  <div class="article-content">
+                     <p>The <code>border</code> property is a shorthand syntax in CSS that accepts multiple values for drawing a line around the element it is applied to.</p>
+                     <pre rel="CSS" data-line="3"><code class="language-css">.box {
+  border: 3px solid red;
+  height: 200px;
+  width: 200px;
+}</code></pre>
+                     <div class="example-box"></div>
+                     <p><span id="more-13968"></span></p>
+                     <h3>Values</h3>
+                     <p>The <code>border</code> property accepts one or more of the following values in combination:</p>
+                     <pre rel="CSS"><code class="language-css">border:  &lt;border-width&gt; || &lt;border-style&gt; || &lt;color&gt;</code></pre>
+                     <ul>
+                        <li>
+                           <code>border-width</code>: Specifies the thickness of the border.
+                           <ul>
+                              <li><code>&lt;length&gt;</code>: A numeric value measured in <code>px</code>, <code>em</code>, <code>rem</code>, <code>vh</code> and <code>vw</code> units.</li>
+                              <li><code>thin</code>: The equivalent of <code>1px</code></li>
+                              <li><code>medium</code>: The equivalent of <code>3px</code></li>
+                              <li><code>thick</code>: The equivalent of <code>5px</code></li>
+                           </ul>
+                        </li>
+                        <li>
+                           <code>border-style</code>: Specifies the type of line drawn around the element, including:
 
+Koding, [27.04.19 18:50]
+<ul>
+                              <li><code>solid</code>: A solid, continuous line.</li>
+                              <li><code>none</code> (default): No line is drawn.</li>
+                              <li><code>hidden</code>: A line is drawn, but not visible. this can be handy for adding a little extra width to an element without displaying a border.</li>
+                              <li><code>dashed</code>: A line that consists of dashes.</li>
+                              <li><code>dotted</code>: A line that consists of dots.</li>
+                              <li><code>double</code>: Two lines are drawn around the element.</li>
+                              <li><code>groove</code>: Adds a bevel based on the color value in a way that makes the element appear pressed into the document.</li>
+                              <li><code>ridge</code>: Similar to <code>groove</code>, but reverses the color values in a way that makes the element appear raised.</li>
+                              <li><code>inset</code>: Adds a split tone to the line that makes the element appear slightly depressed.</li>
+                              <li><code>outset</code>: Similar to <code>inset</code>, but reverses the colors in a way that makes the element appear slightly raised.</li>
+                           </ul>
+                        </li>
+                        <li><code>color</code>: Specifies the color of the border and accepts <code>&lt;rgb()&gt;</code>, <code>&lt;rgba()&gt;, &lt;code&gt;&lt;hsl()&gt;</code>, <code>&lt;hsla()&gt;</code>, <code>&lt;hex-color&gt;</code>, <code>&lt;named-color&gt;</code>, <code>currentcolor</code> and <code>&lt;deprecated-system-color&gt;</code></li>
+                     </ul>
+                     <p>Phew, that's a lot of values for one little ol' property! Here's a demo that illustrates the differences between all of those style values:</p>
+                     <p data-height="300" style="height: 300px; display: flex; align-items: center; justify-content: center; border: 2px solid black; margin: 1rem 0; padding: 1rem; overflow: auto;" data-theme-id="1" data-slug-hash="gxvKbQ" data-default-tab="result" data-user="geoffgraham" data-embed-version="2" data-pen-title="CSS border" class="codepen">See the Pen <a href="https://codepen.io/geoffgraham/pen/gxvKbQ/">CSS border</a> by Geoff Graham (<a href="https://codepen.io/geoffgraham">@geoffgraham</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+                     <h3>Browser Support</h3>
+                     <p>You can count on excellent support for the <code>border</code> property across all browsers.</p>
+                     <table class="browser-support-table">
+                        <thead>
+                           <tr>
+                              <th class="chrome"><span>Chrome</span></th>
+                              <th class="safari"><span>Safari</span></th>
+                              <th class="firefox"><span>Firefox</span></th>
+                              <th class="opera"><span>Opera</span></th>
+                              <th class="ie"><span>IE</span></th>
+                              <th class="android"><span>Android</span></th>
+                              <th class="iOS"><span>iOS</span></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td class="yep">Any</td>
+                              <td class="yep">Any</td>
+                              <td class="yep">Any</td>
+                              <td class="yep">3.5+</td>
+                              <td class="yep">4+</td>
+                              <td class="yep">Any</td>
+                              <td class="yep">Any</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <h3>Related Properties</h3>
+                     <p>What we covered here is specific to the <code>border</code> property, but there are other properties that provide even more options for styli
+
+Koding, [27.04.19 18:50]
+ng borders.</p>
+                     <ul>
+                        <li><a href="https://css-tricks.com/almanac/properties/b/border-collapse/"><code>border-collapse</code>:</a> Specifies the spacing between borders on the <code>&lt;table&gt;</code> element.</li>
+                        <li><a href="https://css-tricks.com/almanac/properties/b/border-image/"><code>border-image</code>:</a> Allows the use of an image to draw the border instead of a solid color.</li>
+                        <li><a href="https://css-tricks.com/almanac/properties/b/border-radius/"><code>border-radius</code>:</a> Provides control for rounded corners.</li>
+                     </ul>
+                     <h3>More Information</h3>
+                     <ul>
+                        <li>
+                           <a href="https://www.w3.org/TR/css3-background/#border">
+                              CSS Backgrounds and Borders Module Level 3 Specification
+                        </li>
+                        <li><a href="http://css-tricks.com/understanding-border-image/">Understanding border-image</a></li>
+                        <li><a href="http://css-tricks.com/video-screencasts/95-a-tale-of-border-gradients/">A Tale of Border Gradients</a></li>
+                     </ul>
+                  </div>
+                  <aside class="entry-unrelated sidebar">
+                     <div id="all-ads"></div>
+                  </aside>
+               </div>
+            </div>
+         </main>
+         <div class="related-ads-comments-wrap">
+            <div class="related-ads-comments">
+               <div class="related-posts">
+                  <!-- Jetpack Related Posts is not supported in this context. -->
+               </div>
+               <div class="end-of-article-ads">
+                  <div class="bsap-doubles side-by-side">
+                     <div id="bsap_1250418" class="bsarocks bsap_3469a2a501a9e18091036aa0c89f9dcb"></div>
+                  </div>
+               </div>
+               <section class="respond-area">
+                  <h2 class="comments-title" id="comments">
+                     Comments
+                  </h2>
+                  <ol id="featured-comments-list" class="commentlist featured-comments-list"></ol>
+                  <ol class="commentlist" id="commentlist">
+                     <li class="comment even thread-even depth-1" id="li-comment-134660">
+                        <div class="comment-wrap" id="comment-134660">
+                           <div class="author-avatar">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/31dbc3f460f86c743d10506f40e53f60?s=160&d=retro&r=pg">
+                              <svg class="half-circle" width="80px" height="80px">
+                                 <use xlink:href="#half-circle"></use>
+                              </svg>
+                           </div>
+                           <div class="comment-body">
+                              <div class="comment-author-wrap vcard">
+                                 <div class="comment-author">Druid of Lûhn</div>
+                                 <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-134660"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2011-12-18T10:28:34-07:00">December 18, 2011</time></div>
+                              </div>
+                              <div class="comment-content">
+                                 <p>Any more about borders?<br />
+                                    border-radius, &#8230;
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="comment-actions">
+                              <div class="reply">
+                                 <a rel='nofollow' class='comment-reply-link' href='#comment-134660' data-commentid="134660" data-postid="13968" data-be
+
+Koding, [27.04.19 18:50]
+lowelement="comment-134660" data-respondelement="respond" aria-label='Reply to Druid of Lûhn'>Reply</a>          
+                              </div>
+                           </div>
+                        </div>
+                        <ul class="children">
+                           <li class="comment odd alt depth-2" id="li-comment-303151">
+                              <div class="comment-wrap" id="comment-303151">
+                                 <div class="author-avatar">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/86771358ece0bb9bcb657fc406c7c0d5?s=160&d=retro&r=pg">
+                                    <svg class="half-circle" width="80px" height="80px">
+                                       <use xlink:href="#half-circle"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="comment-body">
+                                    <div class="comment-author-wrap vcard">
+                                       <div class="comment-author">Enrique de Larrazabal</div>
+                                       <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-303151"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-03-14T05:13:22-07:00">March 14, 2013</time></div>
+                                    </div>
+                                    <div class="comment-content">
+                                       <p>border-radius is a different property, it is not included in the shorthand <code>border</code>, but if you are looking for it, you can also find it in the almanac: <a href="http://css-tricks.com/almanac/properties/b/border-radius/" rel="nofollow">http://css-tricks.com/almanac/properties/b/border-radius/</a></p>
+                                    </div>
+                                 </div>
+                                 <div class="comment-actions">
+                                    <div class="reply">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <!-- #comment-## -->
+                        </ul>
+                        <!-- .children -->
+                     </li>
+                     <!-- #comment-## -->
+                     <li class="comment byuser comment-author-johnelmsoftware-com even thread-odd thread-alt depth-1" id="li-comment-358709">
+                        <div class="comment-wrap" id="comment-358709">
+                           <div class="author-avatar">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/9c9975aec1f7541fcb77dc1f3b99e700?s=160&d=retro&r=pg">
+                              <svg class="half-circle" width="80px" height="80px">
+                                 <use xlink:href="#half-circle"></use>
+                              </svg>
+                           </div>
+                           <div class="comment-body">
+                              <div class="comment-author-wrap vcard">
+                                 <div class="comment-author">John Lueders</div>
+                                 <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-358709"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2013-04-09T10:29:23-07:00">April 9, 2013</time></div>
+                              </div>
+                              <div class="comment-content">
+                                 <p>Hi Chris,</p>
+                                 <p>Would like to see the list of available border style properties here. Believe that would be helpful.</p>
+
+Koding, [27.04.19 18:50]
+<blockquote>
+                                    <p>
+                                       hidden, dotted, dashed, solid, double, groove, ridge, inset, outset
+                                    </p>
+                                 </blockquote>
+                                 <p>Also, you insight/opinion on these styles. I see solid, dotted, dashed frequently but not the others&#8230;are they going out of style?&#8230;are they being deprecated?</p>
+                                 <p>All the best,</p>
+                                 <p>John</p>
+                              </div>
+                           </div>
+                           <div class="comment-actions">
+                              <div class="reply">
+                                 <a rel='nofollow' class='comment-reply-link' href='#comment-358709' data-commentid="358709" data-postid="13968" data-belowelement="comment-358709" data-respondelement="respond" aria-label='Reply to John Lueders'>Reply</a>          
+                              </div>
+                           </div>
+                        </div>
+                        <ul class="children">
+                           <li class="comment odd alt depth-2" id="li-comment-1597350">
+                              <div class="comment-wrap" id="comment-1597350">
+                                 <div class="author-avatar">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/ce194172512d9682204c8f7ad880dbf4?s=160&d=retro&r=pg">
+                                    <svg class="half-circle" width="80px" height="80px">
+                                       <use xlink:href="#half-circle"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="comment-body">
+                                    <div class="comment-author-wrap vcard">
+                                       <div class="comment-author">C.M.</div>
+                                       <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-1597350"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2015-10-05T12:26:58-07:00">October 5, 2015</time></div>
+                                    </div>
+                                    <div class="comment-content">
+                                       <p>Who is this Chris you are trying to speak to?</p>
+                                    </div>
+                                 </div>
+                                 <div class="comment-actions">
+                                    <div class="reply">
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <!-- #comment-## -->
+                        </ul>
+                        <!-- .children -->
+                     </li>
+                     <!-- #comment-## -->
+                     <li class="comment even thread-even depth-1" id="li-comment-1581225">
+                        <div class="comment-wrap" id="comment-1581225">
+                           <div class="author-avatar">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/7467a059c8b0e97820375a73c6368a73?s=160&d=retro&r=pg">
+                              <svg class="half-circle" width="80px" height="80px">
+                                 <use xlink:href="#half-circle"></use>
+                              </svg>
+                           </div>
+                           <div class="comment-body">
+                              <div class="comment-author-wrap vcard">
+                                 <div class="comment-author
+
+Koding, [27.04.19 18:50]
+<div class="comment-body">
+                              <div class="comment-author-wrap vcard">
+                                 <div class="comment-author">Farhan</div>
+                                 <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-1611249"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2017-08-22T01:41:20-07:00">August 22, 2017</time></div>
+                              </div>
+                              <div class="comment-content">
+                                 <p>this is really very helpfull, thanks guys</p>
+                              </div>
+                           </div>
+                           <div class="comment-actions">
+                              <div class="reply">
+                                 <a rel='nofollow' class='comment-reply-link' href='#comment-1611249' data-commentid="1611249" data-postid="13968" data-belowelement="comment-1611249" data-respondelement="respond" aria-label='Reply to Farhan'>Reply</a>          
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <!-- #comment-## -->
+                  </ol>
+                  <div class="respond">
+                     <div class="comment-form-form-area">
+                        <div id="respond" class="comment-respond">
+                           <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/almanac/properties/b/border/#respond" style="display:none;">Cancel reply</a></small></h3>
+                           <form action="https://css-tricks.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                              <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
+                              <p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+                              <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' /></p>
+                              <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' /></p>
+                              <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+                              <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+                              <!-- Mailchimp for WordPress v4.5.0 - https://mc4wp.com/ --><input type="hidden" name="_mc4wp_subscribe_wp-comment-form" value="0" />
+                              <p class="mc4wp-checkbox mc4wp-checkbox-wp-comment-form"><label><input type="checkbox" name="_mc4wp_subscribe_wp-comment-form" value="1" checked="checked" /><span>Get the CSS-Tricks newsletter</span></label></p>
+                              <!-- / Mailchimp for WordPress -->
+                              <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='13968' id='comment_post_ID' />
+                                 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                              </p>
+                              <p style="display: none;"><input type="hidden" id="akisme
+
+Koding, [27.04.19 18:50]
+">cyran</div>
+                                 <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-1581225"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-05-15T00:58:52-07:00">May 15, 2014</time></div>
+                              </div>
+                              <div class="comment-content">
+                                 <p>how this site is really helpful but am in agreement with john what about the other styles hidden, dotted, dashed, solid, double, groove, ridge, inset, outset?<br />
+                                    why are they not included.
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="comment-actions">
+                              <div class="reply">
+                                 <a rel='nofollow' class='comment-reply-link' href='#comment-1581225' data-commentid="1581225" data-postid="13968" data-belowelement="comment-1581225" data-respondelement="respond" aria-label='Reply to cyran'>Reply</a>          
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <!-- #comment-## -->
+                     <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1583499">
+                        <div class="comment-wrap" id="comment-1583499">
+                           <div class="author-avatar">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/83cf7c79ecb0378a1bfc37772c30803a?s=160&d=retro&r=pg">
+                              <svg class="half-circle" width="80px" height="80px">
+                                 <use xlink:href="#half-circle"></use>
+                              </svg>
+                           </div>
+                           <div class="comment-body">
+                              <div class="comment-author-wrap vcard">
+                                 <div class="comment-author">Robbee</div>
+                                 <div class="comment-time"><a href="https://css-tricks.com/almanac/properties/b/border/#comment-1583499"><span class="screen-reader">Permalink to comment</span>#</a> <time datetime="2014-07-07T20:23:44-07:00">July 7, 2014</time></div>
+                              </div>
+                              <div class="comment-content">
+                                 <p>Thanks for the help. This site is good when I have trouble making the code right.</p>
+                              </div>
+                           </div>
+                           <div class="comment-actions">
+                              <div class="reply">
+                                 <a rel='nofollow' class='comment-reply-link' href='#comment-1583499' data-commentid="1583499" data-postid="13968" data-belowelement="comment-1583499" data-respondelement="respond" aria-label='Reply to Robbee'>Reply</a>          
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                     <!-- #comment-## -->
+                     <li class="comment even thread-even depth-1 buried" id="li-comment-1611249">
+                        <div class="comment-wrap" id="comment-1611249">
+                           <div class="author-avatar">
+                              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="50" height="50" class="lazyload-gravatar" alt="User Avatar" data-src="https://secure.gravatar.com/avatar/33b9a8581f445fa752b9b6022f6e9a2d?s=160&d=retro&r=pg">
+                              <svg class="half-circle" width="80px" height="80px">
+                                 <use xlink:href="#half-circle"></use>
+                              </svg>
+                           </div>
+
+Koding, [27.04.19 18:50]
+t_comment_nonce" name="akismet_comment_nonce" value="8756357753" /></p>
+                              <p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="188"/></p>
+                           </form>
+                        </div>
+                        <!-- #respond -->
+                        <div class="comment-reminders bold-underline-links">
+                           <p>All comments are held for moderation. We'll publish all comments that are on topic, not rude, and adhere to our <a href="/coc">Code of Conduct</a>. You'll even get little stars if you do an extra good job.</p>
+                           <p>You may write comments in <a href="https://commonmark.org/help/">Markdown</a>. This is the best way to post any code, inline like &lt;div>this&lt;/div> or multiline blocks within triple backtick fences (`) with double new lines before and after.</p>
+                           <p>Want to tell us something privately, like pointing out a typo or stuff like that? <a href="/contact/">Contact Us</a>.</p>
+                        </div>
+                     </div>
+                     <div class="comment-form-coc-area bold-underline-links">
+                        We have a<br>
+                        <a href="/coc/">Code of Conduct</a>.
+                        <circle-text r="132" class="circle-text-coc">
+                           Be cool. Be helpful. The web is a big place. Have fun. High five.
+                        </circle-text>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+      <footer class="site-footer footer-newsletter">
+         <div class="footer-newsletter-inside">
+            <hr class="thick">
+            <h2>How do you stay up to date in this fast⁠-⁠moving&nbsp;industry?</h2>
+            <p>A good start is to sign up for our weekly hand-written newsletter. We bring you the best articles and ideas from around the web, and what we think about them.</p>
+            <div id="footer-form-wrap">
+               <form action="https://chriscoyier.us2.list-manage.com/subscribe/post?u=155f5a9ccc4e24c318130cace&amp;id=197f127a68" method="post" id="mc-embedded-subscribe-form">
+                  <div class="subwrap">
+                     <div class="inner-sub">
+                        <div class="submarine">
+                           <div class="porthole"></div>
+                           <div class="porthole"></div>
+                           <div class="fin"></div>
+                           <div class="fin lower"></div>
+                           <div class="periscope"></div>
+                           <div class="prop"></div>
+                           <label for="mce-EMAIL" class="screen-reader">Email Address</label>
+                           <input type="email" name="EMAIL" class="required email mailchimp-email-input" id="mce-EMAIL" placeholder="lovetricks@internet.cool" required="">
+                           <div class="inner"></div>
+                        </div>
+                        <div class="btnwrap">
+                           <b>
+                           <span>Subscribe</span>
+                           </b>
+                           <input type="submit" value="Subscribe" name="Subscribe" id="mc-embedded-subscribe" class="button subscribe-button">
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+            <div class="social-links">
+               <a href="https://www.facebook.com/CSSTricks/" class="social-link-facebook">
+               <strong>Facebook</strong>
+               <span>@CSSTricks</span>
+               </a>
+               <a href="https://twitter.com/css" class="social-link-twitter">
+               <strong>Twitter</strong>
+               <span>@CSS</span>
+               </a>
+               <a href="https://www.youtube.com/user/realcsstricks" class="social-link-youtube">
+               <strong>YouTube</strong>
+               <span>@realcsstricks</span>
+               </a>
+               <a href="h
+
+Koding, [27.04.19 18:50]
+ttps://spectrum.chat/css-tricks" class="social-link-spectrum">
+               <strong>Spectrum</strong>
+               <span>@css-tricks</span>
+               </a>
+               <a href="https://css-tricks.com/feed/" class="social-link-rss">
+               <strong>RSS</strong>
+               <span>Feed</span>
+               </a>
+            </div>
+         </div>
+      </footer>
+      <div class="footer-colophon-wrapper">
+         <footer class="site-footer footer-colophon">
+            <div>
+               <h4>👋 </h4>
+               <p>CSS-Tricks<span>*</span> is created, written by, and maintained by <a href="https://chriscoyier.net">Chris Coyier</a> and <a href="/about/">a team</a> of swell people. It is built on WordPress and powered up by <a href="/jetpack/">Jetpack</a>. It is made possible through <a href="/advertising/">sponsorships</a> from products and services we like.</p>
+               <p class="mega-big-time-warning"><small><span>*</span>May or may not contain any actual "CSS" or "Tricks".</small></p>
+            </div>
+            <nav>
+               <h4>Other Nav</h4>
+               <a href="/contact/">Contact</a>
+               <a href="/about/">About</a>
+               <a href="/forums/">Forums</a>
+               <a href="/advertising/">Advertise</a>
+               <a href="/license/">License</a>
+               <a href="/subscription-options/">Subscribe</a>
+               <a href="/guest-posting/">Guest Posting</a>
+               <a href="/authors/">All Authors</a>
+               <a href="https://conferences.css-tricks.com/">Conferences</a>
+               <a href="https://thepowerofserverless.info/">Serverless</a>
+            </nav>
+         </footer>
+      </div>
+      <footer class="site-footer footer-partners">
+         <div class="footer-partner footer-partner-codepen">
+            <div>
+               <a href="https://codepen.io/hello">
+                  <svg class="codepen-logo" viewBox="0 0 138 26" width="100%" height="100%">
+                     <path d="M15 8a7 7 0 1 0 0 10m7-8.7L33 2l11 7.3v7.4L33 24l-11-7.3zm0 0l11 7.4 11-7.4m0 7.4L33 9.3l-11 7.4M33 2v7.3m0 7.4V24M52 6h5a7 7 0 0 1 0 14h-5zm28 0h-9v14h9m-9-7h6m11 1h6a4 4 0 0 0 0-8h-6v14m26-14h-9v14h9m-9-7h6m11 7V6l11 14V6"></path>
+                  </svg>
+                  <span class="screen-reader-text">CodePen</span>
+               </a>
+               <p class="bold-underline-links">
+                  <a href="https://codepen.io/hello">CodePen</a> is a place to experiment, debug, and show off your HTML, CSS, and JavaScript creations.
+               </p>
+            </div>
+         </div>
+         <div class="footer-partner footer-partner-mediatemple">
+            <div>
+               <a href="https://mediatemple.net/landing/csstricks/?utm_source=CSS-Tricks&utm_medium=display&utm_campaign=heaeder-box" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.56 32.15">
+                     <title>mt</title>
+                     <path d="M16.45,9.77V11.7h.11a17.4,17.4,0,0,1,9.19-2.25c5.78,0,7.74,1.65,8.5,2.25a17.37,17.37,0,0,1,9.12-2.25c9.83,0,9.83,3.87,9.83,5.44V24H45.28V15.89c0-1.69,0-3.56-4.22-3.56-2.08,0-4.22.64-5,1.57a4.23,4.23,0,0,0-1,3.27V24H27.19V16.21c0-2.42.06-3.88-4.1-3.88-2.08,0-4.22.55-5,1.38-.63.63-1,1.29-1,3.39V24H9.11V9.77Z" fill="#fff"/>
+                     <path d="M72.29,12.93H66.54v5.71c0,2,0,2.67,2.35,2.67A16.34,16.34,0,0,0,72,21l.25,0,.74,2.9a41.33,41.33,0,0,1-6.67.57c-2.59,0-5.93-.39-7.17-1.45-1-.87-1.17-1.72-1.17-3.88V12.93H54.13V10H58V7.13l8.52-2.21v5h5.75Z" fill="#fff"/>
+                     <path d="M5.24,32.08A29.62,29.62,0,0,1,0,16,28.12,28.12,0,0,1,5.3,0H8.48c-2.36,5.23-4,9.68-4,16.15A36.72,36.72,0,0,0,8.35,31.87a.79.79,0,0,1,.1.21Z" fill="#fff"/>
+                     <path d="M76.33.07a29.64,29.64,0,0,1,5.23,16.08,28,28,0,0,1-5.3,16H73.08c2.36-5.24,4-9.68,4-16.14A36.79,36.79,0,0,0,73.22.27a.47.47,0,0,1-.1-.2Z" fill="#fff"/>
+                  </svg>
+               </a>
+               <p class="bold-underline-links">
+                  <a href="https://mediatemple.net/landing/css
+
+Koding, [27.04.19 18:50]
+tricks/?utm_source=CSS-Tricks&utm_medium=display y&utm_campaign=heaeder-box">MediaTemple</a> has been CSS-Tricks web host since day one. Save 20% with code <strong>CSSTRICKS</strong>.</a>
+               </p>
+            </div>
+         </div>
+         <div class="footer-partner footer-partner-shoptalk">
+            <div>
+               <a href="https://shoptalkshow.com" ><img class="shoptalk-img" src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/images/shoptalk_logo.png" alt="ShopTalk Show"></a>
+               <p class="bold-underline-links">
+                  <a href="https://shoptalkshow.com">ShopTalk</a> is a podcast all about front-end web design and development.
+               </p>
+            </div>
+         </div>
+      </footer>
+      <svg width="0" height="0" display="none" xmlns="http://www.w3.org/2000/svg">
+         <defs>
+            <clipPath id="a">
+               <path fill="#fff" d="M0 0h40v40H0z"/>
+            </clipPath>
+            <clipPath id="a">
+               <path fill="#fff" d="M0 0h40v40H0z"/>
+            </clipPath>
+            <clipPath id="a">
+               <path fill="#fff" d="M0 0h40v40H0z"/>
+            </clipPath>
+            <clipPath id="a">
+               <path fill="#fff" d="M0 0h40v40H0z"/>
+            </clipPath>
+            <clipPath id="a">
+               <path fill="#fff" d="M0 0h40v40H0z"/>
+            </clipPath>
+         </defs>
+         <symbol id="half-circle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"/>
+         </symbol>
+         <symbol id="icon-burger" viewBox="0 0 24 24">
+            <rect y="2" width="24" height="2" rx="1"/>
+            <rect y="20" width="24" height="2" rx="1"/>
+            <rect y="8" width="24" height="2" rx="1"/>
+            <rect y="14" width="24" height="2" rx="1"/>
+         </symbol>
+         <symbol id="icon-close" viewBox="0 0 95.08 95.09">
+            <path d="M58.31 47.47l34.58-34.58a7.63 7.63 0 0 0 0-10.69 7.63 7.63 0 0 0-10.69 0L47.62 36.78 13 2.19a7.63 7.63 0 0 0-10.69 0 7.63 7.63 0 0 0 0 10.69l34.6 34.6L2.33 82.07a7.29 7.29 0 0 0 0 10.69 7.63 7.63 0 0 0 10.69 0l34.6-34.6 34.6 34.6a7.27 7.27 0 0 0 10.68 0 7.63 7.63 0 0 0 0-10.69z"/>
+         </symbol>
+         <symbol id="icon-globe" viewBox="0 0 24 24">
+            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM2 12h20"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+         </symbol>
+         <symbol id="icon-itunes" viewBox="0 0 171.75 171.75">
+            <path d="M85.88 0a85.88 85.88 0 1 0 85.87 85.88A85.88 85.88 0 0 0 85.88 0zm38.52 24.27a3.64 3.64 0 0 1 3.67 2.81c.18.62.22 12 .18 45.45l-.07 44.61-.46 1.67a15.89 15.89 0 0 1-11 11.32c-3.88 1.16-9.57 1.6-12.36.94a12.2 12.2 0 0 1-6.26-3.61 12.82 12.82 0 0 1-4.14-9.6 12.4 12.4 0 0 1 1.37-5.81 12.67 12.67 0 0 1 6.53-6.44c2.64-1.32 5-2 11.88-3.44 4.52-1 5.62-1.35 6.5-2.4 1.21-1.44 1.19-.91 1.13-23.74-.06-19.83-.08-20.92-.44-21.47a2.86 2.86 0 0 0-2.83-1.07c-1.25.18-45.76 9.18-46.87 9.48a3.37 3.37 0 0 0-2.41 2.65c-.17.79-.24 9.55-.24 31.1 0 33.1 0 32.35-1.3 35.86a19.24 19.24 0 0 1-1.5 3.08 18.11 18.11 0 0 1-5 4.85c-4.06 2.4-12 3.64-16.25 2.53a13.17 13.17 0 0 1-9.35-8.56 16.44 16.44 0 0 1-.38-7.75 13.11 13.11 0 0 1 3.41-6.32c2.91-2.92 6.36-4.29 15.63-6.17 2-.41 4.07-.89 4.59-1.06a5.31 5.31 0 0 0 2.84-2.69c.35-.79.38-2.71.48-35.78l.1-34.95.49-1a5.88 5.88 0 0 1 3-2.73c.79-.3 47-9.72 54.86-11.18a37.21 37.21 0 0 1 4.2-.58z"/>
+         </symbol>
+         <symbol id="icon-link" viewBox="0 0 100 58.84">
+            <title>icon-link</title>
+            <path d="M78.47 48H49.21a10.66 10.66 0 0 1-9-4.91h10.58A21.57 21.57 0 0 0 71.7 26.64h6.76a10.67 10.67 0 0 1 0 21.33zm-67.6-26.47a10.67 10.67 0 0 1 10.67-10.66H50.8A10.59 10.59 0 0 1 58.34 14a10.94 10.94 0 0 1 1.43 1.79H49.21a21.57 21.57 0 0 0-20.92 16.4h-6.76a10.67 10.67 0 0 1-10.66-10.66zm39.92 10.66H39.86a10.68 10.68 0 0 1 9.35-5.54h10.93a10.67 10.67 0 0 1-9.35 5.54zM100 37.31a21.53 21.53 0 0 0-21.53-21.53h-6.92A21.53 21.53 0 0 0 50.8 0H21.54a21
+
+Koding, [27.04.19 18:50]
+.53 21.53 0 0 0 0 43.06h6.83v-.31A21.41 21.41 0 0 0 34 52.53a21.4 21.4 0 0 0 15.2 6.31h29.26A21.56 21.56 0 0 0 100 37.31z"/>
+         </symbol>
+         <symbol id="icon-logo-star" viewBox="0 0 362.62 388.52">
+            <title>icon-logo-star</title>
+            <path d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z"/>
+         </symbol>
+         <symbol id="icon-nav-almanac" viewBox="0 0 36 40">
+            <path d="M31 39H9V1h22c2.2 0 4 1.8 4 4v30c0 2.2-1.8 4-4 4zM9 1H1v38h8V1zM2 10h7M2 14h7"/>
+            <path d="M28 16l-4-4-4 4V1h8v15z"/>
+         </symbol>
+         <symbol id="icon-nav-articles" viewBox="0 0 40 40">
+            <path d="M24.9 6H9.1C7.9 6 7 6.9 7 8.1V16c0 1.2.9 2.1 2.1 2.1h15.8c1.2 0 2.1-.9 2.1-2.1V8.1c0-1.2-.9-2.1-2.1-2.1z"/>
+            <path d="M33.2 4H37c1.1 0 2 .9 2 2v29.2c0 2.1-1.7 3.8-3.8 3.8H4.8C2.7 39 1 37.3 1 35.2V4.8C1 2.7 2.7 1 4.8 1H29c2.2 0 4 1.8 4 4v28c0 1.7 1.3 3 3 3s3-1.3 3-3V9M7 23h20M7 28h20M7 33h20"/>
+         </symbol>
+         <symbol id="icon-nav-guides" viewBox="0 0 40 40">
+            <g clip-path="url(#a)">
+               <path d="M6.2 37.4L14 35V1L3.8 4.1C2.1 4.7 1 6.2 1 7.9v25.7c0 2.7 2.6 4.6 5.2 3.8zM26 39l10.2-3.1c1.7-.5 2.8-2.1 2.8-3.8V5c0-2.7-2.6-4.6-5.1-3.8L26 3.6V39zM14 1l12 3M14 35l12 4"/>
+            </g>
+         </symbol>
+         <symbol id="icon-nav-jobs" viewBox="0 0 40 40">
+            <g clip-path="url(#a)">
+               <path d="M39 23l-19 4-19-4V12c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4v11z"/>
+               <path d="M38 24v11c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4V24M32 8H7V5c0-2.2 1.8-4 4-4h17c2.2 0 4 1.8 4 4v3z"/>
+               <path d="M15 27c0 2.75 2.25 5 5 5s5-2.25 5-5"/>
+            </g>
+         </symbol>
+         <symbol id="icon-nav-newsletter" viewBox="0 0 40 40">
+            <g clip-path="url(#a)">
+               <path d="M35 39H5c-2.2 0-4-1.8-4-4V19l19 9 19-9v16c0 2.2-1.8 4-4 4zM2 38l12-13M38 38L26 25M33.2 15l5.8 4M1 19l5.8-4"/>
+               <path d="M7 22V5c0-2.2 1.8-4 4-4h18c2.2 0 4 1.8 4 4v17"/>
+               <path d="M26 13c0 3.3-2.7 6-6 6s-6-2.7-6-6"/>
+            </g>
+         </symbol>
+         <symbol id="icon-nav-snippets" viewBox="0 0 40 40">
+            <g clip-path="url(#a)">
+               <path d="M17.2 37.8l-15-15c-1.6-1.6-1.6-4.1 0-5.7l15-15c1.6-1.6 4.1-1.6 5.7 0l15 15c1.6 1.6 1.6 4.1 0 5.7l-15 15c-1.6 1.6-4.2 1.6-5.7 0z"/>
+               <path d="M14 16l-4 4 4 4M26 24l4-4-4-4M21 16l-2 8"/>
+            </g>
+         </symbol>
+         <symbol id="icon-nav-videos" viewBox="0 0 40 40">
+            <g clip-path="url(#a)">
+               <path d="M20 39c10.493 0 19-8.507 19-19S30.493 1 20 1 1 9.507 1 20s8.507 19 19 19z"/>
+               <path d="M20 33c7.18 0 13-5.82 13-13S27.18 7 20 7 7 12.82 7 20s5.82 13 13 13z"/>
+               <path d="M17.1 17v6.6c0 .8.8 1.2 1.5.9l6-3.3c.7-.4.7-1.4 0-1.7l-6-3.3c-.7-.4-1.5 0-1.5.8z"/>
+            </g>
+         </symbol>
+         <symbol id="icon-pin" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15
+
+Koding, [27.04.19 18:50]
+z"/>
+            <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"/>
+         </symbol>
+         <symbol id="icon-play" viewBox="0 0 32 32">
+            <path clip-rule="evenodd" d="M27.25 16c0 6.213-5.037 11.25-11.25 11.25S4.75 22.213 4.75 16 9.787 4.75 16 4.75 27.25 9.787 27.25 16zM16 31c8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15C7.716 1 1 7.716 1 16c0 8.284 6.716 15 15 15zm-1.657-19.744c-1.002-.668-2.343.05-2.343 1.253v7.63c0 1.204 1.341 1.922 2.343 1.254l5.722-3.815a1.507 1.507 0 0 0 0-2.508l-5.722-3.814z"/>
+         </symbol>
+         <symbol id="icon-search" viewBox="0 0 100 100">
+            <title>icon-search</title>
+            <path d="M80.65 66.78a33.55 33.55 0 0 1-47.44-47.44 33.55 33.55 0 1 1 47.44 47.44zm6.73-54.16a43.06 43.06 0 0 0-65.32 55.71L2 88.39A6.8 6.8 0 0 0 11.61 98l20.06-20.06a43.06 43.06 0 0 0 55.71-65.32z"/>
+         </symbol>
+         <symbol id="icon-star" viewBox="0 0 100 95.52">
+            <title>icon-star</title>
+            <g data-name="Layer 2">
+               <path d="M64.19 28.77a5.17 5.17 0 0 0 3.9 2.83s29.27-3 31.74 4.61-23 22.39-23 22.39a5.17 5.17 0 0 0-1.49 4.58s11.91 26.9 5.42 31.61S52.4 79.87 52.4 79.87a5.21 5.21 0 0 0-2.41-.6 5.14 5.14 0 0 0-2.41.6S25.68 99.5 19.2 94.79s5.42-31.61 5.42-31.61a5.18 5.18 0 0 0-1.49-4.58S-2.31 43.83.17 36.21s31.74-4.61 31.74-4.61a5.19 5.19 0 0 0 3.9-2.83S42 0 50 0s14.19 28.77 14.19 28.77z" data-name="Layer 1"/>
+            </g>
+         </symbol>
+         <symbol id="logo-facebook" viewBox="0 0 16 16">
+            <path d="M5.667 16h3.2V7.933h2.266L11.4 5.2H8.867V3.667C8.867 3 9 2.8 9.6 2.8h1.733V0h-2.2c-2.4 0-3.466 1.067-3.466 3.067V5.2H4v2.733h1.667V16z"/>
+         </symbol>
+         <symbol id="logo-rss" viewBox="0 0 16 16">
+            <path d="M0 0v3.2c3.4 0 6.6 1.333 9 3.733 2.4 2.4 3.733 5.6 3.733 9.067H16C16 7.2 8.8 0 0 0zM2.2 11.666c-1.2 0-2.2 1-2.2 2.2C0 15.066 1 16 2.2 16c1.2 0 2.2-1 2.2-2.2-.067-1.134-1.067-2.134-2.2-2.134z"/>
+            <path d="M0 5.467v3.2C4.067 8.733 7.333 12 7.333 16h3.2C10.533 10.2 5.8 5.533 0 5.467z"/>
+         </symbol>
+         <symbol id="logo-spectrum" viewBox="0 0 32 32">
+            <path d="M6 14.5A1.5 1.5 0 0 0 7.5 16H9a7 7 0 0 1 7 7v1.5a1.5 1.5 0 0 0 1.5 1.5h7a1.5 1.5 0 0 0 1.5-1.5V23c0-9.389-7.611-17-17-17H7.5A1.5 1.5 0 0 0 6 7.5v7z"/>
+         </symbol>
+         <symbol id="logo-twitter" viewBox="0 0 16 16">
+            <path d="M0 12.867a9.332 9.332 0 0 0 5 1.466c6.067 0 9.533-5.133 9.333-9.733.667-.466 1.2-1.066 1.667-1.666-.6.266-1.2.466-1.867.533a3.55 3.55 0 0 0 1.467-1.8c-.667.4-1.333.666-2.067.8-.666-.734-1.533-1.134-2.466-1.134-2.134 0-3.667 2-3.2 4-2.734-.133-5.134-1.4-6.734-3.4a3.299 3.299 0 0 0 1 4.4c-.533-.066-1.066-.2-1.466-.4C.6 7.468 1.733 8.867 3.267 9.2c-.467.134-1 .134-1.467.067a3.16 3.16 0 0 0 3.067 2.267A6.726 6.726 0 0 1 0 12.867z"/>
+         </symbol>
+         <symbol id="logo-youtube" viewBox="0 0 16 16">
+            <path d="M15.667 4.4c-.2-.667-.734-1.267-1.4-1.4C13 2.667 8 2.667 8 2.667s-5 0-6.267.333c-.666.2-1.2.733-1.4 1.4C0 5.666 0 8.333 0 8.333s0 2.6.333 3.867c.2.667.734 1.267 1.4 1.4C3 13.933 8 13.933 8 13.933s5 0 6.267-.333c.666-.2 1.2-.733 1.4-1.4C16 10.933 16 8.333 16 8.333s0-2.667-.333-3.933zm-9.334 6.266V5.933l4.2 2.4-4.2 2.333z"/>
+         </symbol>
+         <symbol id="logo" viewBox="0 0 474.15 58.26">
+            <path d="M46 42.57a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20V29c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.48 5.03 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94C43.44 2.57 37.73 0 29 0 12 0 0 13.12 0 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.54A4.71 4.71 0 0 0 46 42.57zm36.86-17.95C72 22 69.43 20.12 69.43 15.77v-.16c0-3.7 3.38-6.68 9.17-6.68 4.43 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 78.76.16C67.58.16 59.53 6.84 59.53 16.5v.16c0 10.38 6.76 13.92 18.74 16.82C88.73 35.89 91 38.06 91 42.08v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7A4.
+
+Koding, [27.04.19 18:50]
+64 4.64 0 0 0 59.61 51a35.05 35.05 0 0 0 21.16 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.34-6.11-13.6-18.02-16.5zm49.88 0c-10.86-2.57-13.43-4.51-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 128.64.16c-11.18 0-19.23 6.68-19.23 16.33v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.77 35.05 35.05 0 0 0 21.16 7.08c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.32-6.11-13.58-18.02-16.48zm45.62 3.22h-15.13a4.79 4.79 0 0 0 0 9.58h15.12a4.79 4.79 0 0 0 0-9.58zM224 1h-37.45a4.59 4.59 0 0 0 0 9.17h13.68v42.62a5 5 0 0 0 10 0V10.14H224A4.59 4.59 0 0 0 224 1zm38.86 0h-20.15a4.91 4.91 0 0 0-5 5v46.79a4.95 4.95 0 0 0 9.89 0V37.66h12.47l13.68 17.46a5.65 5.65 0 0 0 4.83 2.58 4.67 4.67 0 0 0 4.75-4.59 5.74 5.74 0 0 0-1.61-3.78l-10.78-13.6c7.56-2.33 12.79-7.81 12.79-16.82v-.16a17 17 0 0 0-4.66-12.15C275.45 3.06 269.9 1 262.82 1zm10.86 18.51c0 5.71-4.51 9.41-11.58 9.41h-14.53V10H262c7.32 0 11.67 3.3 11.67 9.33zm27-18.91a4.89 4.89 0 0 0-5 4.91v47.28a4.95 4.95 0 0 0 9.89 0V5.47a4.88 4.88 0 0 0-4.98-4.91zm62.67 42a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20V29c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.44 5.07 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94C360.72 2.57 355 0 346.32 0c-17.06 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.58 4.71 4.71 0 0 0-4.7-4.58zm41-16.82l17.54-16.9a4.81 4.81 0 0 0 1.77-3.7A4.53 4.53 0 0 0 419 .56a5.2 5.2 0 0 0-4.1 1.85l-26.66 26.88V5.47a4.95 4.95 0 0 0-9.9 0v47.32a4.95 4.95 0 0 0 9.9 0V41.12l9.17-8.85 18.1 23.09a5 5 0 0 0 4.18 2.33 4.83 4.83 0 0 0 5-4.83 5.36 5.36 0 0 0-1.37-3.54zm51.8-1.13c-10.92-2.65-13.49-4.53-13.49-8.88v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 452 .16c-11.15 0-19.2 6.68-19.2 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.76A35.05 35.05 0 0 0 454 58.1c11.83 0 20.11-6.28 20.11-16.82v-.16c.04-9.34-6.11-13.6-17.98-16.5z"/>
+         </symbol>
+      </svg>
+      <svg width="0" height="0" class="visually-hidden">
+         <defs>
+            <linearGradient id="orange-to-pink" x1="1" x2="0" y1="1" y2="0">
+               <stop offset="0%" stop-color="#DA1B60" />
+               <stop offset="100%" stop-color="#ff8a00" />
+            </linearGradient>
+            <filter id="duotone_orange_pink">
+               <feColorMatrix type="matrix" result="grayscale"
+                  values="1 0 0 0 0
+                  1 0 0 0 0
+                  1 0 0 0 0
+                  0 0 0 1 0" >
+               </feColorMatrix>
+               <feComponentTransfer color-interpolation-filters="sRGB" result="duotone">
+                  <feFuncR type="table" tableValues="0.7411764706 0.9882352941"></feFuncR>
+                  <feFuncG type="table" tableValues="0.0431372549 0.7333333333"></feFuncG>
+                  <feFuncB type="table" tableValues="0.568627451 0.05098039216"></feFuncB>
+                  <feFuncA type="table" tableValues="0 1"></feFuncA>
+               </feComponentTransfer>
+            </filter>
+         </defs>
+      </svg>
+      <script type="text/javascript">
+         window.WPCOM_sharing_counts = {"https:\/\/css-tricks.com\/almanac\/properties\/b\/border\/":13968};
+      </script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var bblpAJAX = {"ajaxurl":"https:\/\/css-tricks.com\/wp-admin\/admin-ajax.php"};
+         /* ]]> */
+      </script>
+      <script  src='https://css-tricks.com/wp-content/plugins/bbpress-live-preview-css-tricks/includes/assets/js/scripts.min.js?ver=1.0.0'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var pollsL10n = {"ajax_url":"https:\/\/css-tricks.com\/wp-admin\
+
+Koding, [27.04.19 18:50]
+/admin-ajax.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"0","show_fading":"1"};
+         /* ]]> */
+      </script>
+      <script  src='https://css-tricks.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.75.2'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var markdownify = {"ajax_url":"\/wp-admin\/admin-ajax.php","nonce":"a430c516d8"};
+         /* ]]> */
+      </script>
+      <script  src='https://css-tricks.com/wp-content/plugins/jetpack-markdown-live-preview-comments/js/markdownify.js?ver=1'></script>
+      <script  src='https://css-tricks.com/wp-includes/js/comment-reply.min.js?ver=5.1.1'></script>
+      <script  src='https://css-tricks.com/wp-content/plugins/jetpack/modules/widgets/search/js/search-widget.js?ver=7.2.1'></script>
+      <script  src='https://css-tricks.com/wp-includes/js/wp-embed.min.js?ver=5.1.1'></script>
+      <script async="async"  src='https://css-tricks.com/wp-content/plugins/akismet/_inc/form.js?ver=4.1.1'></script>
+      <script type='text/javascript'>
+         /* <![CDATA[ */
+         var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+         /* ]]> */
+      </script>
+      <script  src='https://css-tricks.com/wp-content/plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=7.2.1'></script>
+      <script >
+         var windowOpen;
+                     jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+                         // If there's another sharing window open, close it.
+                         if ( 'undefined' !== typeof windowOpen ) {
+                             windowOpen.close();
+                         }
+                         windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+                         return false;
+                     });
+         var windowOpen;
+                     jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+                         // If there's another sharing window open, close it.
+                         if ( 'undefined' !== typeof windowOpen ) {
+                             windowOpen.close();
+                         }
+                         windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+                         return false;
+                     });
+      </script>
+      <script type='text/javascript' src='https://stats.wp.com/e-201917.js' async='async' defer='defer'></script>
+      <script type='text/javascript'>
+         _stq = window._stq || [];
+         _stq.push([ 'view', {v:'ext',j:'1:7.2.1',blog:'45537868',post:'13968',tz:'-7',srv:'css-tricks.com'} ]);
+         _stq.push([ 'clickTrackerInit', '45537868', '13968' ]);
+      </script>
+      <script src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/js/min/global-concat.min.js?v=3.1"></script>
+      <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-68528-29', 'auto');
+         
+         if (typeof articleYear !== "undefined") {
+           ga('set', 'dimension1', articleYear);
+         }
+         if (typeof articleAuthor !== "undefined") {
+           ga('set', 'dimension2', articleAuthor);
+         }
+         if (typeof articleType !== "undefined") {
+           ga('set', 'dimension3', articleType);
+         }
+         
+         ga('send', 'pageview');
+      </script>
+      <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+   </body>
 </html>
