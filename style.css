@@ -5,6 +5,10 @@ body{
     
 }
 
+.navbar {
+    background: black;
+}
+
 img{
     width:100%;
     height:auto;
